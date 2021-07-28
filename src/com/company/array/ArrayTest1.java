@@ -10,6 +10,9 @@ import java.util.Scanner;
  * 方式1：将数组中的每个元素进行查看----》数组的遍历
  * 方式2： 增强for循环:
  * 对scores数组进行遍历:遍历出来每个元素都用int类型的num接收
+ * 增强for循环:
+ *  优点: 代码简单
+ *  缺点: 单纯的增强for循环不能设计跟索引相关的操作
  */
 public class ArrayTest1 {
     public static void main(String[] args) {
