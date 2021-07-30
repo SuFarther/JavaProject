@@ -40,6 +40,6 @@ public class Person {
 
 
      public String introduce(){
-         return "我的名字是:"+name+"我的年龄是:"+age+"我的身高是:"+height+"我的体重是:"+weight;
+         return "我的名字是:"+name+"\n我的年龄是:"+age+"\n我的身高是:"+height+"\n我的体重是:"+weight;
      }
 }
