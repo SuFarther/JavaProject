@@ -1,6 +1,6 @@
 package com.company.object;
 
-import java.sql.SQLOutput;
+
 
 /**
  * @version 1.0
