@@ -20,8 +20,8 @@ public class Person {
      */
     String name;
     int  age;
-    int  height;
-    int  weight;
+    double  height;
+    double  weight;
 
     /**
      * 吃饭的方法,行为
