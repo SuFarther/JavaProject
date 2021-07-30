@@ -7,7 +7,7 @@ package com.company.object;
  * @Description 面向对象 属性和方法
  * @createTime 2021年07月30日 22:02:02
  */
-public class TestOOP1 {
+public class Person {
     /**
      * @title 
      * @description  name(名字),age(年龄),height(身高),weight(体重)
