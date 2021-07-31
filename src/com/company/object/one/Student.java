@@ -1,4 +1,4 @@
-package com.company.object;
+package com.company.object.one;
 
 /**
  * @version 1.0
