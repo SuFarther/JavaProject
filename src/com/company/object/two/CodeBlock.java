@@ -15,8 +15,6 @@ package com.company.object.two;
  *   总结: 代码块的执行顺序
  *     静态块>构造块>构造器> 普通方法
  *
- *
- *
  * @createTime 2021年08月01日 12:49:49
  */
 public class CodeBlock {
