@@ -1,7 +1,6 @@
 package com.company.object.two;
 
 /**
- * @author zairensuyi
  * @version 1.0
  * @ClassName StaticMethod
  * @company 公司
