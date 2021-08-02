@@ -66,10 +66,16 @@ public class Phone {
      */
     @Override
     public boolean equals(Object obj) {
-        Phone other = (Phone) obj;
-        if (this.getBrand() == other.getBrand() && this.getPrice() == other.getPrice()
-                && this.getYear() == other.getYear()) {
-            return  true;
+        /**
+         * instanceof前面的对象是否是后面一个对象的实例
+         * 属于Phone类的对象
+         */
+        if(obj instanceof Phone){
+            Phone other = (Phone) obj;
+            if (this.getBrand() == other.getBrand() && this.getPrice() == other.getPrice()
+                    && this.getYear() == other.getYear()) {
+                return  true;
+            }
         }
         return false;
     }
