@@ -67,7 +67,11 @@ public class Phone {
     @Override
     public boolean equals(Object obj) {
         /**
-         * instanceof前面的对象是否是后面一个对象的实例
+         * instanceof前面的对象是否是后面一个类的实例
+         *
+         * a instanceof b
+         * 判断a对象是否是b这个类的实例,如果是 返回true 如果不是返回false
+         *
          * 属于Phone类的对象
          */
         if(obj instanceof Phone){
