@@ -24,5 +24,8 @@ public class PhoneTest {
         }else{
             System.out.println("两个对象不相等");
         }
+
+        Cat c = new Cat();
+        System.out.println(p1.equals(c));
     }
 }
