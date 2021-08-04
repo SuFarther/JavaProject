@@ -31,7 +31,7 @@ public class PizzaTest {
             break;
             case  2:
             {
-                System.out.println("请录入你想要输入的水果:");
+                System.out.println("请录入你想要输入的水果配料:");
                 String burdening = s.next();
                 System.out.println("请录入培根的大小:");
                 int size = s.nextInt();
