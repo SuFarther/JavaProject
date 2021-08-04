@@ -20,9 +20,9 @@ public class PizzaTest {
             {
                 System.out.println("请录入培根的克数:");
                 int weight = s.nextInt();
-                System.out.println("请录入培根的大小:");
+                System.out.println("请录入披萨的大小:");
                 int size = s.nextInt();
-                System.out.println("请录入培根的价格:");
+                System.out.println("请录入披萨的价格:");
                 double price = s.nextDouble();
                 //将录入的信息封装为培根披萨的对象
                 BaconPizza bp = new BaconPizza("培根披萨",size,price,weight);
@@ -33,9 +33,9 @@ public class PizzaTest {
             {
                 System.out.println("请录入你想要输入的水果配料:");
                 String burdening = s.next();
-                System.out.println("请录入培根的大小:");
+                System.out.println("请录入披萨的大小:");
                 int size = s.nextInt();
-                System.out.println("请录入培根的价格:");
+                System.out.println("请录入披萨的价格:");
                 double price = s.nextDouble();
                 //将录入的信息封装为水果披萨的对象:
                 FruitsPizza fp =new FruitsPizza("水果披萨",size,price,burdening);
