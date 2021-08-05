@@ -16,15 +16,21 @@ package com.company.exception;
  *    Error(错误)                         Exception(异常)
  *                                    ⬇                  ⬇
  *   JVM系统内部错误内存溢出           检查异常              运行时异常(ArrayIndexOutOfBoundsException，NullPointerException)
- *   靠程序本身是无法解决️
+ *   靠程序本身是无法解决️              (Class.forName("com.company");检查时异常)
+ *                                  （防患未然,要对异常进行处理）
  *
  * @createTime 2021年08月05日 20:34:34
  */
 public class ExceptionRuntime {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         int[] arr = {1,2,3,4};
         int[] arr2 = null;
 //        System.out.println(arr[10]);
 //        System.out.println(arr2[0]);
+        try{
+            Class.forName("com.company.exception.ExceptionRuntime").newInstance();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
