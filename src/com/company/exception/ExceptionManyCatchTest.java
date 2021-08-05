@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @company 公司
  * @Description 异常
  * 多重catch
+ * 先写子类异常,在写父类异常，在jdk1.7异常并列  InputMismatchException e ｜  ArithmeticException e
  *
  * @createTime 2021年08月05日 08:35:35
  */
@@ -26,6 +27,8 @@ public class ExceptionManyCatchTest {
           System.out.println("对不起,你录入的数据不是int类型");
       }catch (ArithmeticException e){
           System.out.println("对不起,除数不为0");
+      }catch (Exception e){
+          System.out.println("对不起,程序出现异常");
       } finally {
           System.out.println("谢谢你使用计算器");
       }
