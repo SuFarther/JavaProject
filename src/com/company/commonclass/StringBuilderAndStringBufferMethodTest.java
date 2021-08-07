@@ -8,7 +8,7 @@ package com.company.commonclass;
  * @Description StringBuilderMethod
  * @createTime 2021年08月07日 20:58:58
  */
-public class StringBuilderMethodTest {
+public class StringBuilderAndStringBufferMethodTest {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("nihaojavaasdadasdasdassada");
         //增
@@ -46,6 +46,9 @@ public class StringBuilderMethodTest {
         String str = sb3.substring(2,4);
         System.out.println(str);
         System.out.println(sb3);
+
+        StringBuffer sf = new StringBuffer();
+        System.out.println(sf.append(3));;
 
     }
 }
