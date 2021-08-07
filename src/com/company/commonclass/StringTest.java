@@ -36,6 +36,5 @@ public class StringTest {
         //求数组对应的元素索引的值
         String str6 = "abc";
         System.out.println("数组对应的元素索引的值:"+str6.charAt(1));
-
     }
 }
