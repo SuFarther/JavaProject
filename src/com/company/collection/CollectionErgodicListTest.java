@@ -1,0 +1,36 @@
+package com.company.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author 苏东坡
+ * @version 1.0
+ * @ClassName CollectionErgodicList
+ * @company 公司
+ * List接口下的方法:
+ * 增加  add(int index, E element)
+ * 修改  set(int index, E element)
+ * 删除  remove(int index)
+ * 查看  get(int index)
+ * 判断
+ * @Description Collection下的子接口List
+ * @createTime 2021年08月08日 19:12:12
+ */
+public class CollectionErgodicListTest {
+    public static void main(String[] args) {
+        List list = new ArrayList();
+        list.add(13);
+        list.add(26);
+        list.add(10);
+        list.add(2);
+        System.out.println("list集合元素为: "+list);
+        list.add(2,12);
+        System.out.println("将指定的元素的下标插入元素: " +list);
+        list.set(1,24);
+        System.out.println("修改指定下标的元素:"+list);
+        list.remove(1);
+        System.out.println("删除指定的元素的下标"+list);
+        System.out.println("查找元素的下标为元素:"+list.get(0));
+    }
+}
