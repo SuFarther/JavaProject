@@ -1,6 +1,7 @@
 package com.company.collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -32,5 +33,27 @@ public class CollectionErgodicListTest {
         list.remove(1);
         System.out.println("删除指定的元素的下标"+list);
         System.out.println("查找元素的下标为元素:"+list.get(0));
+
+        //list集合循环遍历
+        //list普通for循环遍历
+        System.out.println("-----------");
+        System.out.println("list普通for循环遍历");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i)+"\t");
+        }
+
+        //list增强for循环
+        System.out.println();
+        System.out.println("list增强for循环");
+        for (Object obj:list) {
+            System.out.print(obj+"\t");
+        }
+
+        System.out.println();
+        System.out.println("list迭代器遍历");
+        Iterator it = list.iterator();
+        while (it.hasNext()){
+            System.out.print(it.next()+"\t");
+        }
     }
 }
