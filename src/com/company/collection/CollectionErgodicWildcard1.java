@@ -17,6 +17,13 @@ public class CollectionErgodicWildcard1 {
         for (Object object:list) {
             System.out.println(object);
         }
+
+        //2.数据的写入操作:
+        //list.add("abc"); ---->出错，不能随意的添加数据
+        list.add(null);
+
+        //3.数据的读取操作：
+        Object o = list.get(0);
     }
 }
 
