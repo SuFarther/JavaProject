@@ -22,8 +22,9 @@ public class CollectionErgodicWildcard1 {
 
 class CollectionErgodicWildcard1Test{
     public static void main(String[] args) {
-        System.out.println(new ArrayList<String>());
-        System.out.println(new ArrayList<Integer>());
-        System.out.println(new ArrayList<Double>());
+        CollectionErgodicWildcard1 c1 = new CollectionErgodicWildcard1();
+        c1.a(new ArrayList<String>());
+        c1.a(new ArrayList<Integer>());
+        c1.a(new ArrayList<Double>());
     }
 }
