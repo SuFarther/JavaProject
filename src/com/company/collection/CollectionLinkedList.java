@@ -1,5 +1,6 @@
 package com.company.collection;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
@@ -18,7 +19,7 @@ import java.util.LinkedList;
  */
 public class CollectionLinkedList {
     public static void main(String[] args) {
-        LinkedList<String> list =  new LinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
         list.add("aaaaa");
         list.add("bbbbb");
         list.add("ccccc");
@@ -47,11 +48,31 @@ public class CollectionLinkedList {
         list.peekFirst();
         list.peekLast();
 
-        if(list.contains("aaaaa")){
+        if (list.contains("aaaaa")) {
             System.out.println("你是对的");
-        }else {
+        } else {
             System.out.println("你是错的");
         }
+
+        System.out.println("----------------");
+
+        //LinedList循环遍历
+        //普通for
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + "\t");
+        }
+        System.out.println();
+        //增强for
+        for (Object obj : list) {
+            System.out.print(obj + "\t");
+        }
+        System.out.println();
+        //循环迭代（先获取迭代器）
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + "\t");
+        }
+        System.out.println();
         System.out.println(list);
     }
 }
