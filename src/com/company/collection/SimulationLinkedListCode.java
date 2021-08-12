@@ -73,14 +73,20 @@ class Node {
 }
 
 class MyLinkedList {
-    //链中一定有子节点
+    /**
+     * 链中一定有首节点
+     */
     Node first;
 
-    //链中一定有尾节点
+    /**
+     * 链中一定有尾节点
+     */
     Node last;
 
 
-    //计数器
+    /**
+     * 计数器
+     */
     int count = 0;
     public MyLinkedList() {
 
