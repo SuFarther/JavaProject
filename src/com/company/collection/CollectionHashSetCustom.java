@@ -1,6 +1,7 @@
 package com.company.collection;
 
 import java.util.HashSet;
+import java.util.Objects;
 
 /**
  * @author 苏东坡
@@ -8,6 +9,8 @@ import java.util.HashSet;
  * @ClassName CollectionHashSetCustom
  * @company 公司
  * @Description HashSet自定义类型 不满足唯一、无序特点
+ * 通过对应的hashcode来结算通过哈希值和一个表达式计算在数组中的位置
+ * hashset底层就是数组+链表=哈希表
  * @createTime 2021年08月14日 23:31:31
  */
 public class CollectionHashSetCustom {
@@ -38,6 +41,18 @@ public class CollectionHashSetCustom {
         this.name = name;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {return true;}
+        if (o == null || getClass() != o.getClass()){ return false;}
+        CollectionHashSetCustom that = (CollectionHashSetCustom) o;
+        return age == that.age && name.equals(that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, name);
+    }
 
     @Override
     public String toString() {
