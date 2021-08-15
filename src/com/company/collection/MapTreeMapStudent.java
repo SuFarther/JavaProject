@@ -8,7 +8,7 @@ import java.util.TreeMap;
  * @version 1.0
  * @ClassName MapTreeMapStudent
  * @company 公司
- * @Description 自定义类型TreeSet 内部比较器
+ * @Description 自定义类型TreeMap 使用
  * @createTime 2021年08月15日 21:46:46
  */
 public class MapTreeMapStudent implements  Comparable<MapTreeMapStudent>{
