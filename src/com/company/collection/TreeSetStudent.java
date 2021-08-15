@@ -1,5 +1,7 @@
 package com.company.collection;
 
+import java.util.TreeSet;
+
 /**
  * @author 苏东坡
  * @version 1.0
@@ -61,8 +63,10 @@ public class TreeSetStudent implements Comparable<TreeSetStudent>{
 
 class  TreeSetStudentTest{
     public static void main(String[] args) {
-        TreeSetStudent t1 = new TreeSetStudent("lili",20,162.7);
-        TreeSetStudent t2 = new TreeSetStudent("lili2",32,170);
-        System.out.println(t1.compareTo(t2));
+        TreeSet<TreeSetStudent> t = new TreeSet<>();
+        t.add(new TreeSetStudent("lili",19,167.9));
+        t.add(new TreeSetStudent("lili2",12,203.4));
+        System.out.println(t.size());
+        System.out.println(t);
     }
 }
