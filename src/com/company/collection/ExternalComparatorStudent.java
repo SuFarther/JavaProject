@@ -61,7 +61,7 @@ public class ExternalComparatorStudent {
  * 外部类实现另一个类的比较器 Comparator比较两个数值
  * 比较年龄
  */
-class BiJiaoQi implements Comparator<ExternalComparatorStudent>{
+class BiJiaoQi1 implements Comparator<ExternalComparatorStudent>{
 
     @Override
     public int compare(ExternalComparatorStudent o1, ExternalComparatorStudent o2) {
@@ -106,7 +106,7 @@ class  ExternalComparatorStudentTest{
         /**
          * 比较年龄
          */
-        Comparator bjqage  = new BiJiaoQi();
+        Comparator bjqage  = new BiJiaoQi1();
         System.out.println(bjqage.compare(s1,s2));
 
         /**
