@@ -47,8 +47,10 @@ public class FileReaderTest {
          * 第二种方式读取
          */
         int  n;
-          while ((n= fr.read())!=-1){
-              System.out.print((char)n+"\t");
-          }
+        while ((n= fr.read())!=-1){
+           System.out.print((char)n+"\t");
+        }
+       //关闭流
+        fr.close();
     }
 }
