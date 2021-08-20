@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class FileReaderTest {
     public static void main(String[] args) throws IOException {
-        File  f = new File("/Users/zairensuyi/Desktop/学习路线/a.txt");
+        File  f = new File("文件路径的详细地址");
         //字符流存储
         FileReader fr =  new FileReader(f);
         //然后一个一个读取
