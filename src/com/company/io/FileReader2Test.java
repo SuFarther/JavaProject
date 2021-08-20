@@ -16,7 +16,7 @@ import java.io.IOException;
 public class FileReader2Test {
 
     public static void main(String[] args) throws IOException {
-        File f = new File("/Users/zairensuyi/Desktop/学习路线/a.txt");
+        File f = new File("文件夹名的地址");
         //字符流存储
         FileReader fr =  new FileReader(f);
         //以快递车为例子
