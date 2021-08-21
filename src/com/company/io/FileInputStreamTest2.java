@@ -17,7 +17,7 @@ public class FileInputStreamTest2 {
         //利用字符流存储将文本的内容读取
 
         //定义一个源文件
-        File f = new File("/Users/zairensuyi/Desktop/学习路线/7b907725ad1230ac3823897e8b878c66.jpeg");
+        File f = new File("图片类型的完整数据地址");
 
         //定义一个字符流存储
         FileInputStream pis = new FileInputStream(f);
