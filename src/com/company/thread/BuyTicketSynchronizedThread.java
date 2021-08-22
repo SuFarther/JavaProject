@@ -5,7 +5,9 @@ package com.company.thread;
  * @version 1.0
  * @ClassName BuyTicketSynchronizedThread
  * @company 公司
- * @Description 线程同
+ * @Description 线程同步
+ *
+ * synchronized (this)this指的是同一个线程对象
  * @createTime 2021年08月22日 22:38:38
  */
 public class BuyTicketSynchronizedThread implements  Runnable{
@@ -28,16 +30,15 @@ public class BuyTicketSynchronizedThread implements  Runnable{
 
 class  BuyTicketSynchronizedThreadTest{
     public static void main(String[] args) {
-        BuyTicketSynchronizedThread btk1 = new BuyTicketSynchronizedThread();
-        Thread t1 = new Thread(btk1,"窗口1");
+        BuyTicketSynchronizedThread t = new BuyTicketSynchronizedThread();
+        Thread t1 = new Thread(t,"窗口1");
         t1.start();
 
-        BuyTicketSynchronizedThread btk2 = new BuyTicketSynchronizedThread();
-        Thread t2 = new Thread(btk2,"窗口2");
+        Thread t2 = new Thread(t,"窗口2");
         t2.start();
 
-        BuyTicketSynchronizedThread btk3 = new BuyTicketSynchronizedThread();
-        Thread t3 = new Thread(btk3,"窗口3");
+
+        Thread t3 = new Thread(t,"窗口3");
         t3.start();
     }
 }
