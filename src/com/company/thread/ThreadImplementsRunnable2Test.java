@@ -5,7 +5,7 @@ package com.company.thread;
  * @version 1.0
  * @ClassName ThreadImplementsRunnable2
  * @company 公司
- * @Description 利用匿名内部类来创建对象
+ * @Description 利用匿名内部类来创建对象2
  * @createTime 2021年08月22日 13:00:00
  */
 class ThreadImplementsRunnable2Test{
