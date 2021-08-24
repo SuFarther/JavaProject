@@ -24,6 +24,8 @@ public class SocketClient2 {
         String str = dis.readUTF();
         System.out.println("服务器对我说:"+str);
 
+        dis.close();
+        is.close();
         dos.close();
         os.close();
         s.close();
