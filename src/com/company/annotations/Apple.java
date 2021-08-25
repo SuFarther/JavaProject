@@ -72,9 +72,6 @@ public class Apple {
 
 class AppleTest{
     public static void main(String[] args) {
-        Apple apple = new Apple();
-        System.out.println(apple.getAppleName());
-        System.out.println(apple.getAppleColor());
-        apple.displayName();
+       FruitInfoUtil.getFruitInfo(Apple.class);
     }
 }
