@@ -120,9 +120,9 @@ public class Person {
 class ReflectPersonTest{
 
     public static void main(String[] args) throws Exception{
-//        testClassEqual();
+        testClassEqual();
 //        testMethodClass();
-        testNewInstance();
+//        testNewInstance();
     }
 
     public static void testNewInstance() throws Exception {
@@ -135,7 +135,7 @@ class ReflectPersonTest{
         }
     }
 
-    public static  void testClassEqual()  {
+    public static  void testClassEqual() throws ClassNotFoundException {
         //1、对象调用getClass()方法来获取，通常应用在： 比如你传进来一个Object
         // 类型的对象,而我不知道你具体是什么类,用这种方法
         Person p = new Person();
@@ -153,9 +153,14 @@ class ReflectPersonTest{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+        //利用类的加载器
+        ClassLoader classLoader = Person.class.getClassLoader();
+        Class c4 = classLoader.loadClass("com.company.reflection.Person");
         System.out.println(c1.equals(c2));
         System.out.println(c1.equals(c3));
         System.out.println(c2.equals(c3));
+        System.out.println(c1.equals(c4));
     }
 
 
